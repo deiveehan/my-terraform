@@ -13,5 +13,5 @@ way to manage build and deployment of infrastructure resource in a easier form u
 - Google project and service account json. 
 
 ### How to 
-[Compute instance creation](basics/readme.md)
- 
+[Simple - Compute instance creation](basics/readme.md)
+[Kubernetes-cluster](gke/readme.md) 
