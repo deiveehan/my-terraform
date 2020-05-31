@@ -10,7 +10,13 @@ way to manage build and deployment of infrastructure resource in a easier form u
 ### Setup
 #### Pre-requisite
 - Terraform CLI
-- Google project and service account json. 
+You may need to have terraform CLI installed in your local workstation to use terraform. You can easily install by going through this link https://learn.hashicorp.com/terraform/getting-started/install.html
+For mac you can say
+```shell script
+brew isntall terraform
+```
+to install terraform
+
 
 ### How to 
 [Simple - Compute instance creation](basics/readme.md)
