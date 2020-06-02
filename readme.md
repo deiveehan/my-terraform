@@ -17,7 +17,6 @@ brew isntall terraform
 ```
 to install terraform
 
-
 ### How to 
-[Simple - Compute instance creation](basics/readme.md)
-[Kubernetes-cluster](gke/readme.md) 
+* [Simple - Compute instance creation](basics/readme.md)
+* [Kubernetes-cluster](gke/readme.md) 

@@ -1,6 +1,6 @@
 
 
-resource "google_container_cluster" "default" {
+resource "google_container_cluster" "ctrl-space-dev" {
   name = "${var.name}"
   project = "{var.project}"
   description = "Test GKE cluster"
