@@ -1,14 +1,14 @@
 
 
-resource "google_container_cluster" "ctrl-space-dev" {
-  name = "${var.name}"
-  project = "{var.project}"
-  description = "Test GKE cluster"
-  location = "${var.location}"
+resource "google_container_cluster" "default" {
+  name = var.name
+  project = var.project
+  description = "Development cluster"
+  location = var.location
 
   remove_default_node_pool = true
 
-  initial_node_count = "${var.initial_node_count}"
+  initial_node_count = var.initial_node_count
 
   master_auth {
     username = ""
@@ -22,15 +22,15 @@ resource "google_container_cluster" "ctrl-space-dev" {
 
 
 resource "google_container_node_pool" "ctrl-space-dev" {
-  name = "${var.name}-node-pool"
-  cluster = "${google_container_cluster.default.name}"
-  project = "${var.project}"
-  location = "${var.location}"
+  name = "default-node-pool"
+  cluster = google_container_cluster.default.name
+  project = var.project
+  location = var.location
   node_count= 1
 
   node_config {
     preemptible = false
-    machine_type = "${var.machine_type}"
+    machine_type = var.machine_type
 
     metadata = {
       disable-legacy-endpoints = "true"

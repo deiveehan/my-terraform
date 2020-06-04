@@ -1,13 +1,42 @@
 ## Terraform
 
+#### What Terraform does
+are ways by which an operator manages build and deployment of infrastructure resource in a easier form using terraform scripts than manually configuring them using IAAS specific console. 
 
-way to manage build and deployment of infrastructure resource in a easier form using scripts than manually configuring them using console. 
-
+It can provision cloud resources such as VMs, LBs etc and is cloud agnostic (i.e., terraform scripts can be used to provision resources in most cloud providers)
 
 #### Advantages:
 - Ability to automate infrastructure components and destroy them easier by running scripts.
 
-### Setup
+#### How it works
+<img src="images/Terraform-Overview.png"></img>
+
+### How it works
+
+Operator creates the following files
+terraform configuration files - main, variables etc., 
+
+Operator runs the following commands
+#### terraform refresh
+
+    terraform gets up to date view of the infrastructure
+
+#### terraform plan 
+
+    terraform talks to the IAAS provider and identifies what it needs to do (Desired configuration
+
+#### terraform apply
+
+    Terraform applies the changes to arrive at the desired state. 
+
+#### terraform destroy
+
+    Terraform knows about the infrastructure, talks to the IAAS and destroys all components and cleans up. 
+    
+#### What happens behind the scene. 
+
+
+### Get started with samples - how to 
 #### Pre-requisite
 - Terraform CLI
 You may need to have terraform CLI installed in your local workstation to use terraform. You can easily install by going through this link https://learn.hashicorp.com/terraform/getting-started/install.html
@@ -15,8 +44,14 @@ For mac you can say
 ```shell script
 brew isntall terraform
 ```
-to install terraform
 
-### How to 
+Terraform samples
 * [Simple - Compute instance creation](basics/readme.md)
 * [Kubernetes-cluster](gke/readme.md) 
+
+
+### Modules
+Terraform uses reusable resources called as modules as part of the script to provision resources. 
+
+<img src="images/Terraform-Modules.png"></img>
+
