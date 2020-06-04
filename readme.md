@@ -17,18 +17,17 @@ Operator creates the following files
 terraform configuration files - main, variables etc., 
 
 Operator runs the following commands
-* terraform refresh
-terraform gets up to date view of the infrastructure
+* terraform refresh: 
+_terraform gets up to date view of the infrastructure_
 
-* terraform plan 
-terraform talks to the IAAS provider and identifies what it needs to do (Desired configuration
+* terraform plan: 
+_terraform talks to the IAAS provider and identifies what it needs to do (Desired configuration_
 
-* terraform apply
-Terraform applies the changes to arrive at the desired state. 
+* terraform apply: 
+_Terraform applies the changes to arrive at the desired state._
 
-* terraform destroy
-Terraform knows about the infrastructure, talks to the IAAS and destroys all components and cleans up. 
-    
+* terraform destroy: 
+_Terraform knows about the infrastructure, talks to the IAAS and destroys all components and cleans up. _    
 #### What happens behind the scene. 
 
 
