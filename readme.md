@@ -18,32 +18,19 @@ terraform configuration files - main, variables etc.,
 
 Operator runs the following commands
 #### terraform refresh
-
-    terraform gets up to date view of the infrastructure
+terraform gets up to date view of the infrastructure
 
 #### terraform plan 
-
-    terraform talks to the IAAS provider and identifies what it needs to do (Desired configuration
+terraform talks to the IAAS provider and identifies what it needs to do (Desired configuration
 
 #### terraform apply
-
-    Terraform applies the changes to arrive at the desired state. 
+Terraform applies the changes to arrive at the desired state. 
 
 #### terraform destroy
-
-    Terraform knows about the infrastructure, talks to the IAAS and destroys all components and cleans up. 
+Terraform knows about the infrastructure, talks to the IAAS and destroys all components and cleans up. 
     
 #### What happens behind the scene. 
 
-
-### Get started with samples - how to 
-#### Pre-requisite
-- Terraform CLI
-You may need to have terraform CLI installed in your local workstation to use terraform. You can easily install by going through this link https://learn.hashicorp.com/terraform/getting-started/install.html
-For mac you can say
-```shell script
-brew isntall terraform
-```
 
 Terraform samples
 * [Simple - Compute instance creation](basics/readme.md)
