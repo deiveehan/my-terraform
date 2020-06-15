@@ -1,4 +1,4 @@
 ### Modules
 
 
-<img src="../../../images"></img>
+<img src="../../../images/Terraform-Modules.png"></img>
