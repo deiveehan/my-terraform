@@ -35,10 +35,11 @@ resource "google_container_node_pool" "ctrl-space-dev" {
     metadata = {
       disable-legacy-endpoints = "true"
     }
-
+/*
     oauth_scopes = [
       "https://www.googleapis.com/auth/logging.write",
-      "https://www.googleapis/auth/monitoring"
-    ]
+      "https://www.googleapis.com/auth/monitoring",
+    ]*/
+
   }
 }
